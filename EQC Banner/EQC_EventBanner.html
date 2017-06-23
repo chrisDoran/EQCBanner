@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>Untitled</title>
+	<script type="text/javascript" src="https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
+<!--Adobe Edge Runtime-->
+    <script type="text/javascript" charset="utf-8" src="https://secure-ds.serving-sys.com/BurstingcachedScripts/libraries/edge/6_0_0/edge.6.0.0.min.js"></script>
+    <style>
+        .edgeLoad-EDGE-577479647 { visibility:hidden; }
+    </style>
+<script>
+   AdobeEdge.loadComposition('EQC_EventBanner', 'EDGE-577479647', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0px",
+    maxW: "undefined",
+    width: "300px",
+    height: "250px"
+}, {"dom":{}}, {"dom":{}});
+</script>
+<script type="text/javascript">
+var adDiv;
+function initEB() {
+    if (!EB.isInitialized()) {
+        EB.addEventListener(EBG.EventName.EB_INITIALIZED, startAd);
+    } else {
+        startAd();
+    }
+}
+function startAd() {
+    adDiv = document.getElementById("Stage");
+
+    addEventListeners();
+}
+function addEventListeners() {
+    document.getElementById("Stage").addEventListener("click", clickthrough);
+}
+function clickthrough() {
+    EB.clickthrough();
+}
+window.addEventListener("load", initEB);
+</script>
+<!--Adobe Edge Runtime End-->
+
+</head>
+<body style="margin:0;padding:0;">
+	<div id="Stage" class="EDGE-577479647">
+	</div>
+</body>
+</html>
